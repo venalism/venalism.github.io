@@ -2,4 +2,4 @@
 
 cara membuat github pages
 1. membuat repo dengan akhiran github.io
-...then what?
+2. ...then what?
