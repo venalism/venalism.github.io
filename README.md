@@ -1,5 +1,3 @@
-# nadigithub.io
+# Personal Branding
 
-cara membuat github pages
-1. membuat repo dengan akhiran github.io
-2. ...then what?
+Repositori resmi Nadi Azzada Akbar, Mahasiswa D4 Teknik Informatika Universitas Logistik dan Bisnis Internasional.
