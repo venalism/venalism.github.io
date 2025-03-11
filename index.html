@@ -20,20 +20,23 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar">
+    <nav class="navbar shadow">
       <div class="container">
-        <div class="logo">PORTFOLIO</div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li class="dropdown">
-            <a href="#about" class="dropbtn">About</a>
-            <div class="dropdown-content">
-              <a href="#about">Tentang</a>
-              <a href="#skills">Keahlian</a>
-              <a href="#contact">Kontak</a>
-            </div>
-          </li>
-        </ul>
+        <a class="logo">PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#skills">Keahlian</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -64,7 +67,7 @@
             <div class="container text-center">
                 <div class="row justify-content-center">
                   <div class="col-3">
-                    <p>Halo, perkenalkan nama saya <b>Nadi Azzada Akbar</b> dengan NPM <b>714240002</b>. Saat ini, saya adalah mahasiswa Program Studi <b>D4 Teknik Informatika di Universitas Logistik dan Bisnis Internasional</b> di Bandung. Saya memiliki minat dalam bidang pemrograman, pengembangan teknologi informasi, dan juga game developing. Saat ini saya tertarik untuk terus mengembangkan pengetahuan dan keterampilan dalam berbagai bahasa pemrograman dan juga algoritma. Saya bercita-cita ingin menjadi seorang <b>software engineer atau menjadi seorang front-end developer</b>.
+                    <p>Halo, perkenalkan nama saya <b>Nadi Azzada Akbar</b> dengan NPM <b>714240002</b>. Saat ini, saya adalah mahasiswa Program Studi <b>D4 Teknik Informatika di Universitas Logistik dan Bisnis Internasional</b> di Bandung. Saya memiliki minat dalam bidang pemrograman, pengembangan teknologi informasi, dan juga game developing. Saat ini saya tertarik untuk terus mengembangkan pengetahuan dan keterampilan dalam berbagai bahasa pemrograman dan juga algoritma. Saya bercita-cita ingin menjadi seorang.
                     </p>
                   </div>
                 <div class="row justify-content-center">
@@ -78,8 +81,16 @@
                       </ul>
                   </div>
                 </div>
-              </div>
-        </div>
+             </div>
+            </div>
+          </div>
+          <div class="container text-center">
+            <h3><b>Download CV Saya</b></h3>
+            <div class="d-flex justify-content-center mt-3">
+              <a href="https://drive.google.com/uc?export=download&id=1pymq8eo9Kr0EkftjdEVpiVCSZDnmogWf" download class="btn btn-primary btn-lg">Download</a>
+          </div>
+          </div>
+      </div>
     </section>
     <!-- About section End -->
 
@@ -100,6 +111,10 @@
             <h3>JavaScript</h3>
             <img src="image/js.png">
           </div>
+          <div class="skills-card">
+            <h3>PHP</h3>
+            <img src="image/php.png">
+          </div>
       </div>
       <br>
       <div class="container">
@@ -114,12 +129,70 @@
             <img src="image/github.png">
           </div>
           <div class="skills-card">
-            <h3>Alice</h3>
+            <h3>Alice 3</h3>
             <img src="image/alice3.png">
+          </div>
+          <div class="skills-card">
+            <h3>Greenfoot</h3>
+            <img src="image/greenfoot-logo.png">
           </div>
       </div>
     </section>
     <!-- Skills Section End -->
+
+    <!-- Projects Section Start -->
+<section id="projects" class="projects py-5">
+  <div class="container">
+    <h2 class="text-center"><b>Project Saya</b></h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Project 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/sitrivia.png" class="card-img-top" alt="SiTrivia Project">
+          <div class="card-body">
+            <h3 class="card-title">SiTrivia</h3>
+            <p class="card-text">Website Quiz Kompetitif yang dibuat oleh saya dan teman saya. Menggunakan PHP, CSS, JavaScript, dan Laravel.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/seminarku.png" class="card-img-top" alt="SeminarKu Project">
+          <div class="card-body">
+            <h3 class="card-title">SeminarKu</h3>
+            <p class="card-text">Website pendaftaran seminar yang dibuat oleh saya sendiri. Menggunakan HTML, CSS, dan JavaScript.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/zombiecrash.png" class="card-img-top" alt="Zombie Crash Project">
+          <div class="card-body">
+            <h3 class="card-title">Zombie Crash</h3>
+            <p class="card-text">Game alice3 sederhana tentang zombie akumulasi poin yang dibuat oleh saya sendiri.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/wormio.png" class="card-img-top" alt="Wormio Project">
+          <div class="card-body">
+            <h3 class="card-title">Wormio</h3>
+            <p class="card-text">Game Greenfoot sederhana tentang game ular multiplayer yang dibuat oleh saya sendiri.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Projects Section End -->
+    <!-- Projects Section End -->
 
     <!-- Contact Section Start -->
     <section id="contact" class="contact">
@@ -138,7 +211,6 @@
           <button type="submit">Kirim</button>
         </form>
       </div>
-    </section>
-    <!-- Projects Section End -->
+    </section>  
   </body>
 </html>

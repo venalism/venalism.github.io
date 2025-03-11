@@ -149,8 +149,8 @@ body {
   width: 50rem;
 }
 
-.col-4 h3 {
-  color: gray;
+h3 {
+  color: rgb(132, 128, 128);
 }
 
 .col-4 ul {
@@ -159,12 +159,14 @@ body {
 
 .about,
 .skills,
+.projects,
 .contact {
   padding: 4rem 0;
 }
 
 .about h2,
 .skills h2,
+.projects h2,
 .contact h2 {
   font-size: 2rem;
   text-align: center;
@@ -172,6 +174,11 @@ body {
 }
 
 .skills-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects-grid {
   display: flex;
   justify-content: space-around;
 }
@@ -184,6 +191,17 @@ body {
 }
 
 .skills-card img {
+  width: 100%;
+}
+
+.projects-card {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  width: 30%;
+}
+
+.projects-card img {
   width: 100%;
 }
 
