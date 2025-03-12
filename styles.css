@@ -25,6 +25,17 @@ body {
   text-align: justify;
 }
 
+.nav-pills .nav-link {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #bb3939;
+  color: white;
+}
+
 .col-3 {
   width: 100%;
   text-align: justify;

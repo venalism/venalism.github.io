@@ -80,36 +80,48 @@
         <!-- Judul Section -->
         <h2 class="text-center fw-bold mb-4">Tentang Saya</h2>
 
-
+        <!-- Teks -->
         <div class="row align-items-center justify-content-evenly gap-4">
           <div class="col-lg-6 col-md-12 text-start order-lg-1 order-2">
             <h1 class="display-4 fw-bold mt-3">Nadi Azzada Akbar</h1>
             <p class="fs-5">Halo, perkenalkan nama saya <b>Nadi Azzada Akbar</b> 
-              dengan NPM <b>714240002</b>. Saat ini, saya adalah mahasiswa Program Studi 
-              <b>D4 Teknik Informatika di Universitas Logistik dan Bisnis Internasional</b> 
-              di Bandung. Saya memiliki minat dalam bidang pemrograman, 
-              pengembangan teknologi informasi, dan juga game developing. 
-              Saat ini saya tertarik untuk terus mengembangkan pengetahuan dan keterampilan 
-              dalam berbagai bahasa pemrograman dan juga algoritma.
+              . Saat ini, saya adalah mahasiswa Program Studi 
+              <b>D4 Teknik Informatika, Universitas Logistik dan Bisnis Internasional</b> 
+              di Bandung.
             </p>
+          </div>
+
+          <!-- Tabs -->
+          <ul class="nav nav-pills mb-3" id="tentangTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pendidikan-tab" data-bs-toggle="pill" 
+                data-bs-target="#pendidikan" type="button" role="tab">Pendidikan</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="organisasi-tab" data-bs-toggle="pill" 
+                data-bs-target="#organisasi" type="button" role="tab">Organisasi</button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pendidikan" role="tabpanel">
+              <ul class="list-group">
+                <li class="list-group-item"><b>SD</b>: SDN 226 Arcamanik Endah</li>
+                <li class="list-group-item"><b>SMP</b>: SMP PGII 1 Bandung</li>
+                <li class="list-group-item"><b>SMA</b>: SMA PGII 1 Bandung</li>
+              </ul>
+            </div>
+  
+            <div class="tab-pane fade" id="organisasi" role="tabpanel">
+              <ul class="list-group">
+                <li class="list-group-item"><b>PASCH</b>: Perkumpulan siswa intensive Bahasa Jerman</li>
+              </ul>
+            </div>
+          </div>
           </div>
 
           <div class="col-lg-5 col-md-12 text-center order-lg-2 order-1">
             <img src="image/foto_profil.jpg" class="img-fluid rounded-3 w-100" style="max-width: 75%;" alt="Foto Profil">
-          </div>
-        </div>
-        <!-- Riwayat Pendidikan -->
-        <div class="container text-center mt-5">
-          <h3 class="fw-bold mb-3">Riwayat Pendidikan</h3>
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4">
-              <ul class="list-group">
-                <li class="list-group-item"><span>SD</span><br>SDN 226 Arcamanik Endah</li>
-                <li class="list-group-item"><span>SMP</span><br>SMP PGII 1 Bandung</li>
-                <li class="list-group-item"><span>SMA</span><br>SMA PGII 1 Bandung</li>
-                <li class="list-group-item active"><span>D4 - Teknik Informatika</span><br>Universitas Logistik dan Bisnis Internasional</li>
-              </ul>
-            </div>
           </div>
         </div>
 
