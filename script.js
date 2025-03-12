@@ -2,27 +2,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('#contact form');
     
     if (contactForm) {
-      contactForm.addEventListener('submit', function(event) {
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+        contactForm.addEventListener('submit', function(event) {
+          if (!contactForm.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Mengirim...';
+            
+            setTimeout(function() {
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+            }, 2000);
+          }
+          
+          contactForm.classList.add('was-validated');
+        }, false);
         
-        if (name === '' || email === '' || message === '') {
-          event.preventDefault();
-          alert('Mohon isi semua field yang dibutuhkan');
-          return false;
-        }
-        
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-          event.preventDefault();
-          alert('Format email tidak valid');
-          return false;
-        }
-        
-        alert('Mengirim pesan... Harap tunggu.');
-        
-        return true;
-      });
-    }
+        contactForm.addEventListener('reset', function() {
+          contactForm.classList.remove('was-validated');
+        });
+      }
+      
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
 });
