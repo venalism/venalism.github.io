@@ -18,6 +18,11 @@ body {
 #hero {
   background-color: #EBE5C2;
   color: black;
+  text-align: justify;
+}
+
+#about p {
+  text-align: justify;
 }
 
 .col-3 {
