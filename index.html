@@ -143,50 +143,125 @@
     <!-- About section End -->
 
     <!-- Skills Section Start -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2><b>Keahlian Pemrograman</b></h2>
-        <div class="skills-grid">
-          <div class="skills-card">
-            <img src="image/html-5.png" alt="HTML5">
-            <h3>HTML</h3>
+    <section id="skills" class="skills py-5 bg-light-subtle">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Skill</h2>
+        
+        <!-- Bootstrap Carousel -->
+        <div id="skillsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner">
+            
+            <!-- Card 1 -->
+            <div class="carousel-item active">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/html-5.png" class="card-img-top img-fluid" alt="HTML5">
+                <div class="card-body">
+                  <h3 class="h5">HTML</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/css-icon.png" class="card-img-top img-fluid" alt="CSS">
+                <div class="card-body">
+                  <h3 class="h5">CSS</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/js.png" class="card-img-top img-fluid" alt="JavaScript">
+                <div class="card-body">
+                  <h3 class="h5">JavaScript</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/php.png" class="card-img-top img-fluid" alt="PHP">
+                <div class="card-body">
+                  <h3 class="h5">PHP</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/vscode.png" class="card-img-top img-fluid" alt="VS Code">
+                <div class="card-body">
+                  <h3 class="h5">VS Code</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/github.png" class="card-img-top img-fluid" alt="GitHub">
+                <div class="card-body">
+                  <h3 class="h5">GitHub</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/alice3.png" class="card-img-top img-fluid" alt="Alice 3">
+                <div class="card-body">
+                  <h3 class="h5">Alice 3</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/greenfoot-logo.png" class="card-img-top img-fluid" alt="Greenfoot">
+                <div class="card-body">
+                  <h3 class="h5">Greenfoot</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/figma.png" class="card-img-top img-fluid" alt="Figma">
+                <div class="card-body">
+                  <h3 class="h5">Figma</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="carousel-item">
+              <div class="card mx-auto bg-warning-subtle p-4 border-0 shadow-sm">
+                <img src="image/canva.png" class="card-img-top img-fluid" alt="Canva">
+                <div class="card-body">
+                  <h3 class="h5">Canva</h3>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="skills-card">
-            <img src="image/css-icon.png" alt="css">
-            <h3>CSS</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/js.png" alt="JavaScript">
-            <h3>CSS</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/php.png" alt="php">
-            <h3>PHP</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/vscode.png" alt="vscode">
-            <h3>VS Code</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/github.png" alt="github">
-            <h3>GitHub</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/alice3.png" alt="alice3">
-            <h3>Alice 3</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/greenfoot-logo.png" alt="greenfoot">
-            <h3>Greenfoot</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/figma.png" alt="figma">
-            <h3>Figma</h3>
-          </div>
-          <div class="skills-card">
-            <img src="image/canva.png" alt="canva">
-            <h3>Canva</h3>
-          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
       </div>
     </section>
 
