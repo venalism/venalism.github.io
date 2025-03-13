@@ -40,18 +40,8 @@ body {
   cursor: pointer;
 }
 
-.tab-item {
-  position: relative;
-  transition: color 0.3s;
-}
-
-.tab-item.active {
-  color: #0d6efd;
-  border-bottom: 2px solid #0d6efd;
-}
-
-.tab-item:hover {
-  color: #0d6efd;
+.download-cv {
+  background-color: #B9B28A;
 }
 
 .col-4 {
@@ -69,7 +59,6 @@ body {
   padding: 4rem 0;
 }
 
-.about h2,
 .skills h2,
 .projects h2,
 .contact h2 {
@@ -147,9 +136,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    padding-top: 100px;
-  }
   .col-1,
   .col-2 {
     flex-basis: 100%;

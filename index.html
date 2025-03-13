@@ -18,46 +18,42 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg shadow rounded-pill fixed-top px-4 py-2"
+    <nav class="navbar navbar-expand-lg shadow rounded-5 fixed-top px-4 py-2"
     style="top: 1rem; left: 50%; transform: translateX(-50%); width: 90%; max-width: 1100px;">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <!-- Logo -->
-      <img src="image/venalism.png" alt="Logo" class="img-fluid" style="width: auto; height: 40px;">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <img src="image/venalism.png" alt="Logo" class="img-fluid" style="width: auto; height: 30px;">
 
-      <!-- Tombol Hamburger -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Tombol Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Menu Navigasi -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Keahlian</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Kontak
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#contact">Email</a></li>
-              <li><a class="dropdown-item" href="#social">Social Media</a></li>
-            </ul>
-          </li>
-        </ul>
+        <!-- Menu Navigasi -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </nav>
 
     <!-- Navbar End -->
@@ -75,7 +71,6 @@
     <!-- About Section Start -->
     <section id="about" class="about py-5">
       <div class="container">
-
         <div class="row align-items-center justify-content-between">
           <!-- Foto Profil -->
           <div class="col-lg-4 col-md-12 text-center">
@@ -84,7 +79,7 @@
 
           <div class="col-lg-7 col-md-12 text-start">
             <!-- Teks Pengenalan -->
-            <h1 class="display-4 fw-bold mt-3">About Me</h1>
+            <h2 class="display-4 fw-bold mt-3">About Me</h1>
             <p class="fs-5">Halo, perkenalkan nama saya <b>Nadi Azzada Akbar.</b> 
               Saat ini, saya adalah mahasiswa Program Studi 
               <b>D4 Teknik Informatika, Universitas Logistik dan Bisnis Internasional</b> 
@@ -99,38 +94,48 @@
                     data-bs-target="#pendidikan" type="button" role="tab">Pendidikan</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link rounded-pill" id="bidang-tab" data-bs-toggle="pill" 
-                    data-bs-target="#bidang" type="button" role="tab">Bidang</button>
+                  <button class="nav-link rounded-pill" id="minat-tab" data-bs-toggle="pill" 
+                    data-bs-target="#minat" type="button" role="tab">Minat</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill" id="softskill-tab" data-bs-toggle="pill"
+                  data-bs-target="#softskill" type="button" role="tab">Soft Skill</button>
                 </li>
               </ul>
 
               <div class="tab-content">
                 <div class="tab-pane fade show active" id="pendidikan" role="tabpanel">
                   <ul class="list-unstyled">
-                    <li><span class="fw-bold">SD</span><br />SDN 226 Arcamanik Endah</li>
-                    <li><span class="fw-bold">SMP</span><br />SMP PGII 1 Bandung</li>
-                    <li><span class="fw-bold">SMA</span><br />SMA PGII 1 Bandung</li>
+                    <li><span class="fw-bold">SMP</span><br />SMP PGII 1 Bandung, 2018-2021.</li>
+                    <li><span class="fw-bold">SMA</span><br />SMA PGII 1 Bandung, 2021-2024.</li>
+                    <li><span class="fw-bold">D4</span><br />Universitas Logistik dan Bisnis Internasional, 2024-Sekarang.</li>
                   </ul>
                 </div>
       
-                <div class="tab-pane fade" id="bidang" role="tabpanel">
+                <div class="tab-pane fade" id="minat" role="tabpanel">
                   <ul class="list-unstyled">
                     <li><span class="fw-bold">Pemrograman</span><br />Tertarik pada dunia koding.</li>
                     <li><span class="fw-bold">Desain</span><br />Mahir dalam menggunakan program desain.</li>
                     <li><span class="fw-bold">Olah Data</span><br />Cakap dalam menggunakan MS Excel</li>
                   </ul>
                 </div>
+                
+                <div class="tab-pane fade" id="softskill" role="tabpanel">
+                  <ul class="list-unstyled">
+                    <li><span class="fw-bold">Komunikasi</span><br />Dapat menyampaikan informasi berdasarkan pemahaman.</li>
+                    <li><span class="fw-bold">Multilingual</span><br />Mahir dalam Bahasa Inggris dan cakap dalam Bahasa Jerman.</li>
+                    <li><span class="fw-bold">Problem-solving</span><br />Dapat menyelesaikan masalah dengan efektif.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Tombol Download CV -->
         <div class="container text-center mt-5">
-          <h3 class="fw-bold mb-3">Download CV Saya</h3>
           <a href="https://drive.google.com/uc?export=download&id=1pymq8eo9Kr0EkftjdEVpiVCSZDnmogWf" 
-            download class="btn btn-primary btn-lg rounded-pill">Download</a>
+            download class="btn btn-primary btn-lg rounded-pill"><b>Download CV</b></a>
         </div>
       </div>
     </section>
@@ -183,6 +188,14 @@
     </section>
 
     <!-- Skills Section End -->
+
+    <!-- Services Section Start -->
+     <section id="services" class="services">
+      <div class="container">
+      </div>
+     </section>
+     
+    <!-- Services Section End -->
 
     <!-- Projects Section Start -->
     <section id="projects" class="projects py-5">
@@ -272,6 +285,12 @@
               <a href="https://instagram.com/ignyanadi" target="_blank" class="btn d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
                 style="fill:#FFFFFF;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                </svg>
+              </a>
+
+              <a href="https://github.com/venalism" target="_blank" class="btn d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30"
+                style="fill:#FFFFFF;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.22,5.22)"></g><path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
                 </svg>
               </a>
             </div>
