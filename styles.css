@@ -73,6 +73,10 @@ body {
   margin-bottom: 10px;
 }
 
+.projects img {
+  height: 300px;
+}
+
 .projects,
 .contact {
   padding: 4rem 0;
