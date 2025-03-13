@@ -40,19 +40,6 @@ body {
   cursor: pointer;
 }
 
-.download-cv {
-  background-color: #B9B28A;
-}
-
-.col-4 {
-  width: 50rem;
-}
-
-.col-4 ul {
-  margin: 30px;
-}
-
-.about,
 .skills,
 .projects,
 .contact {
