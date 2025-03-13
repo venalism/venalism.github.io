@@ -33,3 +33,45 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".skills-slider");
+  const cards = Array.from(document.querySelectorAll(".skills-card"));
+  const totalCardWidth = cards.reduce((sum, card) => sum + card.offsetWidth, 0);
+
+  function duplicateCards() {
+    const fragment = document.createDocumentFragment();
+
+    cards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      fragment.appendChild(clone);
+    });
+
+    slider.appendChild(fragment);
+    slider.style.width = `${totalCardWidth * 2}px`;
+  }
+
+  duplicateCards();
+
+  let scrollAmount = 0;
+  const slideSpeed = 1.5;
+  let lastTimestamp = 0;
+
+  function autoSlide(timestamp) {
+    if (!lastTimestamp) lastTimestamp = timestamp;
+    const elapsed = timestamp - lastTimestamp;
+
+    const adjustment = (elapsed / 16.67) * slideSpeed;
+    scrollAmount -= adjustment;
+
+    if (Math.abs(scrollAmount) >= totalCardWidth) {
+      scrollAmount = 0;
+    }
+
+    slider.style.transform = `translateX(${scrollAmount}px)`;
+
+    lastTimestamp = timestamp;
+    requestAnimationFrame(autoSlide);
+  }
+
+  requestAnimationFrame(autoSlide);
+});
