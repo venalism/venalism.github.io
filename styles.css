@@ -77,40 +77,22 @@ body {
   height: 300px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .col-1,
-  .col-2 {
-    flex-basis: 100%;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .nav-links {
-    display: block;
-  }
-
-  .nav-links li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .skills-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
+@media (min-width: 600px) {
   .skills-card {
-    width: 90%;
-    margin-bottom: 1rem;
+    width: 140px;
   }
-  .contact form {
-    width: 90%;
+  .skills-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-card {
+    width: 160px;
+  }
+  .skills-card img {
+    width: 90px;
+    height: 90px;
   }
 }
