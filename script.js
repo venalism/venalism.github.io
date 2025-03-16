@@ -1,3 +1,4 @@
+//contact start//
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('#contact form');
     
@@ -33,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//contact end//
+//skill start//
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".skills-slider");
   const cards = Array.from(document.querySelectorAll(".skills-card"));
@@ -75,3 +78,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   requestAnimationFrame(autoSlide);
 });
+//skill end//

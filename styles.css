@@ -77,6 +77,8 @@ body {
   height: 300px;
 }
 
+/*Responsivitas*/
+
 @media (min-width: 600px) {
   .skills-card {
     width: 140px;
