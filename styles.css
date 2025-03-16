@@ -25,6 +25,10 @@ body {
   text-align: justify;
 }
 
+.bg-gradient-hero {
+  background-image: linear-gradient(to bottom, #B9B28A, #EBE5C2, #F8F3D9);
+}
+
 .nav-pills .nav-link {
   color: #333;
   font-size: 18px;
