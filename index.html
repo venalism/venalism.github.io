@@ -65,7 +65,7 @@
     <!-- About Section Start -->
     <section id="about" class="about py-5">
       <div class="container">
-        <!-- div1: Title (spans full width) -->
+        <!-- div1: Title -->
         <div class="row mb-3">
           <div class="col-12 text-center">
             <h2 class="display-4 fw-bold">About Me</h2>
@@ -73,27 +73,26 @@
         </div>
         
         <div class="row">
-          <!-- div2: Image (spans 4 columns on large screens, full width on smaller screens) -->
+          <!-- div2: Image -->
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
             <div class="h-100 d-flex align-items-center justify-content-center">
               <img src="image/foto_profil.jpg" class="img-fluid rounded-3" style="max-width: 80%;" alt="Foto Profil">
             </div>
           </div>
-          
-          <!-- Column group for div3 and div4 -->
+
           <div class="col-lg-8 col-md-12 ps-lg-4">
-            <!-- div3: Text Introduction -->
+            <!-- Text Introduction -->
             <div class="row mb-3">
               <div class="col-12">
                 <p class="fs-5">Halo, perkenalkan nama saya <b>Nadi Azzada Akbar.</b> 
                   Saat ini, saya adalah mahasiswa Program Studi 
-                  <b>D4 Teknik Informatika, Universitas Logistik dan Bisnis Internasional</b> 
+                  D4 Teknik Informatika, Universitas Logistik dan Bisnis Internasional 
                   di Bandung.
                 </p>
               </div>
             </div>
             
-            <!-- div4: Tabs Content -->
+            <!-- Tabs Content -->
             <div class="row">
               <div class="col-12">
                 <div class="mt-2">
@@ -117,7 +116,7 @@
                       <ul class="list-unstyled">
                         <li><span class="fw-bold">SMP</span><br />SMP PGII 1 Bandung, 2018-2021.</li>
                         <li><span class="fw-bold">SMA</span><br />SMA PGII 1 Bandung, 2021-2024.</li>
-                        <li><span class="fw-bold">D4</span><br />Universitas Logistik dan Bisnis Internasional, 2024-Sekarang.</li>
+                        <li><span class="fw-bold">D4</span><br />ULBI, 2024-Sekarang.</li>
                       </ul>
                     </div>
                     
@@ -143,7 +142,7 @@
           </div>
         </div>
         
-        <!-- div5: Download Button (spans full width) -->
+        <!-- Download Button -->
         <div class="row mt-4">
           <div class="col-12 text-center">
             <a href="https://drive.google.com/uc?export=download&id=1pymq8eo9Kr0EkftjdEVpiVCSZDnmogWf" 
@@ -234,64 +233,112 @@
 
     <!-- Skills Section End -->
 
-    <!-- Projects Section Start -->
     <section id="projects" class="projects py-5">
       <div class="container">
-        <h2 class="text-center mb-4"><b>Project</b></h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6">
+            <div class="text-center">
+              <h2 class="fw-bold position-relative pb-3 mb-4">
+                <span class="position-relative z-1">My Projects</span>
+                <span class="position-absolute start-50 bottom-0 translate-middle-x bg-warning" style="height: 4px; width: 50px;"></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
           <!-- Project 1 -->
-          <div class="col">
-            <div class="card h-100 rounded-4">
-              <img src="image/sitrivia.png" class="card-img-top" alt="SiTrivia Project">
-              <div class="card-body">
-                <hr class="border border-warning border-2">
-                <h3 class="card-title fw-semibold">SiTrivia</h3>
-                <p class="card-text">Website Quiz Kompetitif yang dibuat oleh saya dan teman saya. Menggunakan PHP, CSS, JavaScript, dan Laravel.</p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden transition-transform" style="transition: transform 0.3s ease;">
+              <div class="position-relative">
+                <img src="image/sitrivia.png" class="card-img-top" alt="SiTrivia Project">
+                <div class="position-absolute top-0 start-0 m-3">
+                  <span class="badge bg-primary rounded-pill px-3 py-2 fw-normal">Web App</span>
+                </div>
+              </div>
+              <hr class="border border-2 border-warning">
+              <div class="card-body p-4">
+                <h3 class="card-title h4 mb-3">SiTrivia</h3>
+                <p class="card-text text-muted mb-4">Website Quiz Kompetitif yang dibuat oleh saya dan teman saya. Menggunakan PHP, CSS, JavaScript, dan Laravel.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-light text-dark border">PHP</span>
+                  <span class="badge bg-light text-dark border">Laravel</span>
+                  <span class="badge bg-light text-dark border">JavaScript</span>
+                  <span class="badge bg-light text-dark border">CSS</span>
+                </div>
               </div>
             </div>
           </div>
           
           <!-- Project 2 -->
-          <div class="col">
-            <div class="card h-100 rounded-4">
-              <img src="image/seminarku.png" class="card-img-top" alt="SeminarKu Project">
-              <div class="card-body">
-                <hr class="border border-warning border-2">
-                <h3 class="card-title fw-semibold">SeminarKu</h3>
-                <p class="card-text">Website pendaftaran seminar yang dibuat oleh saya sendiri. Menggunakan HTML, CSS, dan JavaScript.</p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden transition-transform" style="transition: transform 0.3s ease;">
+              <div class="position-relative">
+                <img src="image/seminarku.png" class="card-img-top" alt="SeminarKu Project">
+                <div class="position-absolute top-0 start-0 m-3">
+                  <span class="badge bg-success rounded-pill px-3 py-2 fw-normal">Website</span>
+                </div>
+              </div>
+              <hr class="border border-2 border-warning">
+              <div class="card-body p-4">
+                <h3 class="card-title h4 mb-3">SeminarKu</h3>
+                <p class="card-text text-muted mb-4">Website pendaftaran seminar yang dibuat oleh saya sendiri. Menggunakan HTML, CSS, dan JavaScript.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-light text-dark border">HTML</span>
+                  <span class="badge bg-light text-dark border">CSS</span>
+                  <span class="badge bg-light text-dark border">JavaScript</span>
+                </div>
               </div>
             </div>
           </div>
           
           <!-- Project 3 -->
-          <div class="col">
-            <div class="card h-100 rounded-4">
-              <img src="image/zombiecrash.png" class="card-img-top" alt="Zombie Crash Project">
-              <div class="card-body">
-                <hr class="border border-warning border-2">
-                <h3 class="card-title fw-semibold">Zombie Crash</h3>
-                <p class="card-text">Game alice3 sederhana tentang akumulasi poin dengan menabrak zombie oleh mobil, yang dibuat oleh saya sendiri.</p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden transition-transform" style="transition: transform 0.3s ease;">
+              <div class="position-relative">
+                <img src="image/zombiecrash.png" class="card-img-top" alt="Zombie Crash Project">
+                <div class="position-absolute top-0 start-0 m-3">
+                  <span class="badge bg-danger rounded-pill px-3 py-2 fw-normal">Game</span>
+                </div>
+              </div>
+              <hr class="border border-2 border-warning">
+              <div class="card-body p-4">
+                <h3 class="card-title h4 mb-3">Zombie Crash</h3>
+                <p class="card-text text-muted mb-4">Game alice3 sederhana tentang zombie akumulasi poin yang dibuat oleh saya sendiri.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-light text-dark border">Alice3</span>
+                  <span class="badge bg-light text-dark border">Game Dev</span>
+                </div>
               </div>
             </div>
           </div>
           
           <!-- Project 4 -->
-          <div class="col">
-            <div class="card h-100 rounded-4">
-              <img src="image/wormio.png" class="card-img-top" alt="Wormio Project">
-              <div class="card-body">
-                <hr class="border border-warning border-2">
-                <h3 class="card-title fw-semibold">Wormio</h3>
-                <p class="card-text">Game Greenfoot sederhana tentang game ular multiplayer dengan beberapa twist, seperti buff dan trap, yang dibuat oleh saya sendiri.</p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden transition-transform" style="transition: transform 0.3s ease;">
+              <div class="position-relative">
+                <img src="image/wormio.png" class="card-img-top" alt="Wormio Project">
+                <div class="position-absolute top-0 start-0 m-3">
+                  <span class="badge bg-danger rounded-pill px-3 py-2 fw-normal">Game</span>
+                </div>
+              </div>
+              <hr class="border border-2 border-warning">
+              <div class="card-body p-4">
+                <h3 class="card-title h4 mb-3">Wormio</h3>
+                <p class="card-text text-muted mb-4">Game Greenfoot sederhana tentang game ular multiplayer yang dibuat oleh saya sendiri.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-light text-dark border">Greenfoot</span>
+                  <span class="badge bg-light text-dark border">Java</span>
+                  <span class="badge bg-light text-dark border">Multiplayer</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Projects Section End -->
-
+    
     <!-- Contact Section Start -->
     <section id="contact" class="contact py-5 text-white" style="background-color: #504B38;">
       <div class="container">

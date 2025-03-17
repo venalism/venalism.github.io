@@ -82,6 +82,8 @@ body {
   cursor: pointer;
 }
 
+/* Skills Section */
+
 .skills-slider-wrapper {
   width: 100%;
   overflow: hidden;
@@ -115,11 +117,39 @@ body {
   margin-bottom: 10px;
 }
 
+/* Projects Section */
+
 .projects img {
-  height: 300px;
+  height: clamp(200px, 40vw, 300px);
+  object-fit: cover;
 }
 
-/*Responsivitas*/
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  filter: brightness(1.05);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--bs-primary);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsivitas */
 
 @media (min-width: 600px) {
   .skills-card {
