@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,22 +12,21 @@ body {
   line-height: 1.6;
 }
 
+/* Layout & Components */
 .navbar {
   background-color: #F8F3D9;
 }
 
-#hero {
+.bg-gradient-hero {
+  background: linear-gradient(to bottom, #B9B28A, #EBE5C2, #F8F3D9);
+}
+
+.btn-primary-div5 {
   background-color: #EBE5C2;
-  color: black;
-  text-align: justify;
 }
 
 #about p {
   text-align: justify;
-}
-
-.bg-gradient-hero {
-  background-image: linear-gradient(to bottom, #B9B28A, #EBE5C2, #F8F3D9);
 }
 
 /* Smooth Transitions */
@@ -63,62 +63,120 @@ body {
   width: 100%;
 }
 
-.btn-primary-div5 {
-  background-color: #EBE5C2;
+/* Service Card Styling */
+.service-card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.nav-pills .nav-link {
-  color: #333;
-  font-size: 18px;
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  width: 85px;
+  height: 85px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-card-decoration {
+  opacity: 0.5;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-card-decoration {
+  transform: scale(1.2);
+}
+
+/* Keep your existing skills slider CSS */
+.skills-slider-wrapper {
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.skills-slider {
+  display: flex;
+  animation: slide 30s linear infinite;
+}
+
+.skills-card {
+  flex: 0 0 120px;
+  margin: 0 15px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skills-card h4 {
+  font-size: 14px;
+  margin: 0;
   font-weight: 500;
 }
 
-.nav-pills .nav-link.active {
-  background-color: #B9B28A;
-  color: white;
-}
-
-.cursor-pointer {
-  cursor: pointer;
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-135px * 10));
+  }
 }
 
 /* Skills Section */
-
 .skills-slider-wrapper {
   width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 40px 0;
+  padding: clamp(20px, 5vw, 40px) 0;
 }
 
 .skills-slider {
   display: flex;
-  gap: 20px;
+  gap: clamp(10px, 2vw, 20px);
   width: max-content;
   white-space: nowrap;
 }
 
 .skills-card {
   background: #EBE5C2;
-  padding: 15px;
+  padding: clamp(10px, 3vw, 15px);
   text-align: center;
-  width: 150px;
+  width: clamp(120px, 15vw, 160px);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
 .skills-card img {
-  width: 80px;
-  height: 80px;
+  width: clamp(60px, 10vw, 90px);
+  height: clamp(60px, 10vw, 90px);
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: clamp(5px, 2vw, 10px);
 }
 
 /* Projects Section */
-
 .projects img {
   height: clamp(200px, 40vw, 300px);
   object-fit: cover;
@@ -138,6 +196,7 @@ body {
   filter: brightness(1.05);
 }
 
+/* Custom animated underline for section title */
 .section-title::after {
   content: '';
   position: absolute;
@@ -149,24 +208,67 @@ body {
   transform: translateX(-50%);
 }
 
-/* Responsivitas */
-
-@media (min-width: 600px) {
-  .skills-card {
-    width: 140px;
+/* Content-Driven Responsive Adjustments */
+@media (max-width: 991px) {
+  .about h2.display-4 {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
-  .skills-card img {
-    width: 80px;
-    height: 80px;
+  
+  .about .fs-5 {
+    font-size: clamp(1rem, 3vw, 1.1rem) !important;
+  }
+  
+  .about .nav-pills,
+  .about .tab-content {
+    text-align: center;
+  }
+  
+  .about .btn-lg {
+    padding: 0.5rem clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
   }
 }
 
-@media (min-width: 1024px) {
-  .skills-card {
-    width: 160px;
+/* Container sizes that complement Bootstrap's breakpoints */
+.container {
+  max-width: 100%;
+  padding-right: clamp(1rem, 3vw, 1.5rem);
+  padding-left: clamp(1rem, 3vw, 1.5rem);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
-  .skills-card img {
-    width: 90px;
-    height: 90px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Custom Bootstrap overrides */
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: clamp(1.5rem, 8vw, 2rem);
   }
 }
