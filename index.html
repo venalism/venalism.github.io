@@ -65,63 +65,83 @@
     <!-- About Section Start -->
     <section id="about" class="about py-5">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <!-- Foto Profil -->
-          <div class="col-lg-4 col-md-12 text-center">
-            <img src="image/foto_profil.jpg" class="img-fluid rounded-3" style="max-width: 80%;" alt="Foto Profil">
+        <!-- div1: Title (spans full width) -->
+        <div class="row mb-3">
+          <div class="col-12 text-center">
+            <h2 class="display-4 fw-bold">About Me</h2>
           </div>
-
-          <div class="col-lg-7 col-md-12 text-start">
-            <!-- Teks Pengenalan -->
-            <h2 class="display-4 fw-bold mt-3">About Me</h1>
-            <p class="fs-5">Halo, perkenalkan nama saya <b>Nadi Azzada Akbar.</b> 
-              Saat ini, saya adalah mahasiswa Program Studi 
-              <b>D4 Teknik Informatika, Universitas Logistik dan Bisnis Internasional</b> 
-              di Bandung.
-            </p>
+        </div>
+        
+        <div class="row">
+          <!-- div2: Image (spans 4 columns on large screens, full width on smaller screens) -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+              <img src="image/foto_profil.jpg" class="img-fluid rounded-3" style="max-width: 80%;" alt="Foto Profil">
+            </div>
+          </div>
+          
+          <!-- Column group for div3 and div4 -->
+          <div class="col-lg-8 col-md-12 ps-lg-4">
+            <!-- div3: Text Introduction -->
+            <div class="row mb-3">
+              <div class="col-12">
+                <p class="fs-5">Halo, perkenalkan nama saya <b>Nadi Azzada Akbar.</b> 
+                  Saat ini, saya adalah mahasiswa Program Studi 
+                  <b>D4 Teknik Informatika, Universitas Logistik dan Bisnis Internasional</b> 
+                  di Bandung.
+                </p>
+              </div>
+            </div>
             
-            <!-- Tabs di bawah teks -->
-            <div class="mt-4">
-              <ul class="nav nav-pills mb-3" id="tentangTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active rounded-pill" id="pendidikan-tab" data-bs-toggle="pill" 
-                    data-bs-target="#pendidikan" type="button" role="tab">Pendidikan</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link rounded-pill" id="softskill-tab" data-bs-toggle="pill"
-                  data-bs-target="#softskill" type="button" role="tab">Soft Skill</button>
-                </li>
-              </ul>
-
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="pendidikan" role="tabpanel">
-                  <ul class="list-unstyled">
-                    <li><span class="fw-bold">SMP</span><br />SMP PGII 1 Bandung, 2018-2021.</li>
-                    <li><span class="fw-bold">SMA</span><br />SMA PGII 1 Bandung, 2021-2024.</li>
-                    <li><span class="fw-bold">D4</span><br />Universitas Logistik dan Bisnis Internasional, 2024-Sekarang.</li>
+            <!-- div4: Tabs Content -->
+            <div class="row">
+              <div class="col-12">
+                <div class="mt-2">
+                  <ul class="nav nav-tabs mb-3 border-0" id="tentangTabs" role="tablist">
+                    <li class="nav-item me-3" role="presentation">
+                      <a class="nav-link active border-0 px-1 pb-1 tab-link" id="pendidikan-tab" data-bs-toggle="pill" 
+                        data-bs-target="#pendidikan" href="#" role="tab">Pendidikan</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link border-0 px-1 pb-1 tab-link" id="softskill-tab" data-bs-toggle="pill"
+                      data-bs-target="#softskill" href="#" role="tab">Soft Skill</a>
+                    </li>
                   </ul>
-                </div>          
-                <div class="tab-pane fade" id="softskill" role="tabpanel">
-                  <ul class="list-unstyled">
-                    <li><span class="fw-bold">Komunikasi</span><br />Dapat menyampaikan informasi dengan baik.</li>
-                    <li><span class="fw-bold">Multilingual</span><br />Mahir dalam Bahasa Inggris dan Bahasa Jerman.</li>
-                    <li><span class="fw-bold">Problem-solving</span><br />Dapat menyelesaikan masalah dengan efektif.</li>
-                  </ul>
+    
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pendidikan" role="tabpanel">
+                      <ul class="list-unstyled">
+                        <li><span class="fw-bold">SMP</span><br />SMP PGII 1 Bandung, 2018-2021.</li>
+                        <li><span class="fw-bold">SMA</span><br />SMA PGII 1 Bandung, 2021-2024.</li>
+                        <li><span class="fw-bold">D4</span><br />Universitas Logistik dan Bisnis Internasional, 2024-Sekarang.</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="softskill" role="tabpanel">
+                      <ul class="list-unstyled">
+                        <li><span class="fw-bold">Komunikasi</span><br />Dapat menyampaikan informasi dengan baik.</li>
+                        <li><span class="fw-bold">Multilingual</span><br />Mahir dalam Bahasa Inggris dan Bahasa Jerman.</li>
+                        <li><span class="fw-bold">Problem-solving</span><br />Dapat menyelesaikan masalah dengan efektif.</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Tombol Download CV -->
-        <div class="container text-center mt-5">
-          <a href="https://drive.google.com/uc?export=download&id=1pymq8eo9Kr0EkftjdEVpiVCSZDnmogWf" 
-            download class="btn btn-primary btn-lg rounded-pill"><b>Download CV</b></a>
+        
+        <!-- div5: Download Button (spans full width) -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <a href="https://drive.google.com/uc?export=download&id=1pymq8eo9Kr0EkftjdEVpiVCSZDnmogWf" 
+              download class="btn btn-primary-div5 btn-lg rounded-pill"><b>Download CV</b></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About section End -->
+    <!-- About section End -->
 
     <!-- Skills Section Start -->
     <section id="skills" class="skills py-5 bg-light-subtle">

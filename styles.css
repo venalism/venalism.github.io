@@ -29,6 +29,44 @@ body {
   background-image: linear-gradient(to bottom, #B9B28A, #EBE5C2, #F8F3D9);
 }
 
+/* Smooth Transitions */
+.row, .col-lg-4, .col-lg-8, img {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Tabs Navigation */
+.tab-link {
+  position: relative;
+  color: #504B38;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tab-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #B9B28A;
+  transition: width 0.3s ease;
+}
+
+.tab-link.active {
+  color: #504B38;
+  font-weight: 500;
+}
+
+.tab-link.active:after,
+.tab-link:hover:after {
+  width: 100%;
+}
+
+.btn-primary-div5 {
+  background-color: #EBE5C2;
+}
+
 .nav-pills .nav-link {
   color: #333;
   font-size: 18px;
