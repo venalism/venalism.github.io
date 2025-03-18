@@ -218,11 +218,6 @@ body {
     font-size: clamp(1rem, 3vw, 1.1rem) !important;
   }
   
-  .about .nav-pills,
-  .about .tab-content {
-    text-align: center;
-  }
-  
   .about .btn-lg {
     padding: 0.5rem clamp(1rem, 3vw, 1.5rem);
     font-size: clamp(0.875rem, 2vw, 1rem);
