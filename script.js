@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //contact end//
+
 //skill start//
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".skills-slider");
